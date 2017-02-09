@@ -1,0 +1,21 @@
+{
+    "name": "MediaWiki PsychonautWiki Spotify ParserHook",
+    "author": "Kenan Sulayman",
+    "version": "1.0.0",
+    "url": "git@github.com:officialpsychonautwiki/mw-pw-spotify.git",
+    "descriptionmsg": "mw-pw-spotify",
+    "license-name": "MIT",
+    "type": "parserhook",
+    "AutoloadClasses": {
+        "PWSpotify": "PWSpotify.class.php"
+    },
+    "ExtensionMessagesFiles": {
+        "PWSpotify": "PWSpotify.i18n.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "PWSpotify::onParserSetup"
+        ]
+    },
+    "manifest_version": 1
+}
